@@ -1,4 +1,4 @@
-# [Game Parallax](game-parralax.vercel.app)
+# [Game Parallax](https://game-parralax-7sruu94qw-twincki.vercel.app/)
 
 Данный проект был создан после просмотра видеоурока от канала [WebDesign Master](https://www.youtube.com/@wdm).
 
