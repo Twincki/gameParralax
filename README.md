@@ -1,4 +1,4 @@
-# Game Parallax
+# [Game Parallax](game-parralax.vercel.app)
 
 Данный проект был создан после просмотра видеоурока от канала [WebDesign Master](https://www.youtube.com/@wdm).
 
