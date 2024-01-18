@@ -17,9 +17,11 @@
 
 :root {
   --index: calc(1vw + 1vh);
+  --transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
 }
 
 body {
+  scroll-behavior: smooth;
   background-color: #010101;
   font-family: raleway_f, sans-serif;
   line-height: 1.55;
@@ -63,22 +65,22 @@ body {
   position: relative;
 }
 
-.layers__base {
+.city__base {
   transform: translate3d(0, calc(var(--scrollTop) / -7), 0);
   z-index: 0;
 }
 
-.layers__front {
+.city__front {
   transform: translate3d(0, calc(var(--scrollTop) / -3.5), 0);
   z-index: 3;
 }
 
-.layers__center {
+.city__center {
   transform: translate3d(0, calc(var(--scrollTop) / -5), 0);
   z-index: 2;
 }
 
-.layers__back {
+.city__back {
   transform: translate3d(0, calc(var(--scrollTop) / -8), 0);
   z-index: 1;
 }
@@ -96,6 +98,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: var(--transition);
 }
 
 .main-article {

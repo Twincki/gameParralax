@@ -5,41 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parralax Game</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/app.js" defer></script>
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="js/app.js" defer></script>
   </head>
   <body>
-    <header class="main-header">
-      <div class="layers">
-        <div class="layer__header">
-          <div class="title layers__title">Welcome to</div>
-          <div class="subtitle layers__game">Dying Light</div>
-        </div>
-        <div
-          class="layer layers__base"
-          style="background-image: url(./img/base.png)"
-        ></div>
-        <div
-          class="layer layers__front"
-          style="background-image: url(./img/front.png)"
-        ></div>
-        <div
-          class="layer layers__center"
-          style="background-image: url(./img/center.png)"
-        ></div>
-        <div
-          class="layer layers__back"
-          style="background-image: url(./img/back.png)"
-        ></div>
-      </div>
-    </header>
+    <div class="wrapper">
+      <div class="content">
+        <header class="main-header">
+          <div class="layers">
+            <div class="layer__header">
+              <div class="title layers__title">Welcome to</div>
+              <div class="subtitle layers__game">Dying Light</div>
+            </div>
+            <div
+              class="layer city__base"
+              style="background-image: url(./img/city/base.png)"
+            ></div>
+            <div
+              class="layer city__front"
+              style="background-image: url(./img/city/front.png)"
+            ></div>
+            <div
+              class="layer city__center"
+              style="background-image: url(./img/city/center.png)"
+            ></div>
+            <div
+              class="layer city__back"
+              style="background-image: url(./img/city/back.png)"
+            ></div>
+          </div>
+        </header>
 
-    <article
-      class="main-article"
-      style="background-image: url(./img/dungeon.jpg)"
-    >
-      <div class="main-article__content">
-        <h2 class="title main-article-header">The World Has Collapsed</h2>
+        <article
+          class="main-article"
+          style="background-image: url(./img/dungeon/base.png)"
+        >
+          <div
+            class="layer dungeon__front"
+            style="background-image: url(./img/dungeon/front.png)"
+          ></div>
+          <div
+            class="layer dungeon__character"
+            style="background-image: url(./img/dungeon/character.png)"
+          ></div>
+          <div
+            class="layer dungeon__back"
+            style="background-image: url(./img/dungeon/back.png)"
+          ></div>
+          <div class="main-article__content">
+            <h2 class="title main-article-header">The World Has Collapsed</h2>
+          </div>
+        </article>
       </div>
-    </article>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime: 800,
+        // Размер шага в пикселях
+        stepSize: 75,
+
+        // Дополнительные настройки:
+
+        // Ускорение
+        accelerationDelta: 30,
+        // Максимальное ускорение
+        accelerationMax: 2,
+
+        // Поддержка клавиатуры
+        keyboardSupport: true,
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll: 50,
+
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+
+        // Поддержка тачпада
+        touchpadSupport: true,
+      });
+    </script>
   </body>
 </html>
