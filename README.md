@@ -46,10 +46,10 @@
 
 ### 1.2 Добавление новых стилей и исправление старых.
 
-- Добавлен новый слой для увеличения эфекта parallax.
+- Добавлен новый слой для увеличения эффекта parallax.
 - Новые стили для стартовой страницы.
 - Исправление изображений.
-- Исправление parallax эфекта.
+- Исправление parallax эффекта.
 
 Новый слой:
 
@@ -64,15 +64,26 @@
 ### 1.3 Исправления стиля нижней части страницы
 
 - Добавлен плавный скролл.
-- Вырезаны отдельные части низа страницы для будущего эфекта parallax.
-- Добавлены эфекты на нижней части для эфекта слияния с верхней.
+- Вырезаны отдельные части низа страницы для будущего эффекта parallax.
+- Добавлены эффекты на нижней части для эффекта слияния с верхней.
 
 Новые слои duungeon:
 
-![projectV1.2 layers_dungeon](material_for_description/example_layers_dungeon.jpg)
+![projectV1.3 layers_dungeon](material_for_description/example_layers_dungeon.jpg)
 
-Пример финальной верси dungeon:
+Пример версии dungeon:
 
-![projectV1.2 dungeon_final](material_for_description/dungeon_final.jpg)
+![projectV1.3 dungeon_final](material_for_description/dungeon_final.jpg)
 
 ---
+
+### 1.4 Изменние нижней части страницы
+
+- Доабалена parallax эффект переднего плана низа сайта.
+- Отредактирована задняя часть низа сайта для правильности отображения parallax эффекта
+- Добавлен текст за персонажем.
+- Добавлен parallax эффект текста за персонажем.
+
+Вид нижней части сайта:
+
+![projectV1.4 examlpe_text_dungeon](material_for_description/example_text_dungeon.jpg)

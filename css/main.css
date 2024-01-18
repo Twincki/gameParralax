@@ -29,14 +29,35 @@ body {
   overflow-x: hidden;
 }
 
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: var(--transition);
+}
+
+.layers {
+  height: 105vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
 .layer__header {
   padding: 1px;
-  z-index: 2;
   margin-bottom: calc(var(--index) * 12);
   margin-left: calc(var(--index) * 4);
-  background-color: rgba(80, 156, 156, 0.151);
-  border-radius: 10px;
+  background-color: rgba(21, 41, 41, 0.37);
   border: 1px solid #6fcfe08a;
+  border-radius: 10px;
+  box-shadow: 10vh 0 10vh 0.5vh rgb(189, 233, 252);
+  z-index: 2;
 }
 
 .title {
@@ -53,16 +74,6 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   text-shadow: 0 0 15px rgb(189, 233, 252);
-}
-
-.layers {
-  height: 105vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
 }
 
 .city__base {
@@ -91,16 +102,6 @@ body {
   z-index: 5;
 }
 
-.layer {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: var(--transition);
-}
-
 .main-article {
   min-height: 100vh;
   width: 100%;
@@ -112,10 +113,37 @@ body {
 .main-article__content {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1vh;
 }
 
 .main-article-header {
+  margin-top: 3vh;
   color: rgb(251, 233, 250);
-  text-shadow: 0 0 15px rgb(172, 145, 251);
+  text-shadow: 1px 6px 25px rgb(172, 145, 251);
   transform: translate3d(0, calc(var(--scrollTop) / 15), 0);
+}
+
+.dungeon__front {
+  transform: translate3d(0, calc(var(--scrollTop) / -8), 0);
+  z-index: 2;
+  margin-top: 11vh;
+}
+
+.dungeon__back {
+  z-index: 1;
+}
+
+.dungeon__character {
+  z-index: 3;
+}
+
+.dungeon_text {
+  transform: translate3d(0, calc(var(--scrollTop) / -8), 0);
+  text-align: center;
+  font-size: calc(var(--index) * 0.7);
+  padding-top: 20vh;
+  max-width: 500px;
+  z-index: 1;
 }
